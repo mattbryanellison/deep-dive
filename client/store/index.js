@@ -1,13 +1,16 @@
-import { createStore } from "redux";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import { createLogger } from "redux-logger";
+import thunkMiddleware from "redux-thunk";
+import { composeWithDevTools } from "redux-devtools-extension";
 
-function basicReducer(state = {}, action) {
-  switch (action.type) {
-    default:
-      return state;
-  }
-}
+import searchArtist from "./searchArtist";
+import searchGenre from "./searchGenre";
+import diveResults from "./diveResults";
 
-// Create a Redux store holding the state of your app.
-// Its API is { subscribe, dispatch, getState }.
-const store = createStore(basicReducer);
+const reducer = combineReducers({ searchArtist, searchGenre, diveResults });
+const middleware = composeWithDevTools(
+  applyMiddleware(thunkMiddleware, createLogger({ collapsed: true }))
+);
+const store = createStore(reducer, middleware);
+
 export default store;
