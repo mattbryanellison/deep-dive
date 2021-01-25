@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require("path");
 const express = require("express");
 const app = express();
 const port = 8080;
@@ -8,8 +9,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", require("./routes"));
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+// static file-serving middleware
+app.use(express.static(path.join(__dirname, "..", "public")));
+
+// sends index.html
+app.use("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "public/index.html"));
 });
 
 app.listen(port, () => {
