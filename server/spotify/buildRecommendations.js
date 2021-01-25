@@ -1,6 +1,8 @@
+/* eslint-disable max-statements */
 const getRelated = require("./getRelated");
 const getToken = require("./getToken");
 
+// eslint-disable-next-line complexity
 module.exports = async (
   startingArtistId,
   genre,

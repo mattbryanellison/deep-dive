@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import axios from "axios";
-import { Grid, TextField, Card } from "@material-ui/core";
+import { Grid, TextField, Card, Fragment, Avatar } from "@material-ui/core";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import history from "../history";
 
@@ -48,6 +48,16 @@ class SearchBar extends React.Component {
           noOptionsText="Enter Artist Name"
           onInputChange={this.onTyping}
           getOptionLabel={(option) => (option.name ? option.name : "")}
+          renderOption={(option) => {
+            return (
+              <React.Fragment>
+                {option.images[0] ? (
+                  <Avatar src={option.images[0].url} />
+                ) : null}
+                {option.name}
+              </React.Fragment>
+            );
+          }}
           getOptionSelected={this.onOptionSelected}
           onChange={this.onSelected}
           value={this.searchValue}
