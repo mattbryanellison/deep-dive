@@ -7,6 +7,12 @@ import history from "../history";
 
 import { setArtist } from "../store/searchArtist";
 
+const styles = {
+  avatar: {
+    marginRight: "5px",
+  },
+};
+
 class SearchBar extends React.Component {
   constructor() {
     super();
@@ -40,19 +46,20 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <Grid item xs={12}>
+      <Grid item xs={10}>
         <Autocomplete
           id="size-small-standard"
           size="small"
           options={this.state.artistOptions}
-          noOptionsText="Enter Artist Name"
+          noOptionsText="We couldn't find anything!"
+          autoHighlight={true}
           onInputChange={this.onTyping}
           getOptionLabel={(option) => (option.name ? option.name : "")}
           renderOption={(option) => {
             return (
               <React.Fragment>
                 {option.images[0] ? (
-                  <Avatar src={option.images[0].url} />
+                  <Avatar style={styles.avatar} src={option.images[0].url} />
                 ) : null}
                 {option.name}
               </React.Fragment>
@@ -64,8 +71,8 @@ class SearchBar extends React.Component {
           renderInput={(params) => (
             <TextField
               {...params}
-              variant="standard"
-              label="Deep Dive Artist"
+              variant="outlined"
+              label="Start with one of your favorite artists!"
               placeholder=""
               fullWidth
             />

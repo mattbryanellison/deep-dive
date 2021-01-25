@@ -2235,6 +2235,165 @@ var TouchRipple = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(fun
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/esm/Card/Card.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Card/Card.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "styles": () => /* binding */ styles,
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _Paper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Paper */ "./node_modules/@material-ui/core/esm/Paper/Paper.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+
+
+
+
+
+
+
+var styles = {
+  /* Styles applied to the root element. */
+  root: {
+    overflow: 'hidden'
+  }
+};
+var Card = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Card(props, ref) {
+  var classes = props.classes,
+      className = props.className,
+      _props$raised = props.raised,
+      raised = _props$raised === void 0 ? false : _props$raised,
+      other = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__.default)(props, ["classes", "className", "raised"]);
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_Paper__WEBPACK_IMPORTED_MODULE_5__.default, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__.default)(classes.root, className),
+    elevation: raised ? 8 : 1,
+    ref: ref
+  }, other));
+});
+ true ? Card.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+
+  /**
+   * If `true`, the card will use raised styling.
+   */
+  raised: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool)
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__.default)(styles, {
+  name: 'MuiCard'
+})(Card));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/CardContent/CardContent.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/CardContent/CardContent.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "styles": () => /* binding */ styles,
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+
+
+
+
+
+
+var styles = {
+  /* Styles applied to the root element. */
+  root: {
+    padding: 16,
+    '&:last-child': {
+      paddingBottom: 24
+    }
+  }
+};
+var CardContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function CardContent(props, ref) {
+  var classes = props.classes,
+      className = props.className,
+      _props$component = props.component,
+      Component = _props$component === void 0 ? 'div' : _props$component,
+      other = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__.default)(props, ["classes", "className", "component"]);
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(Component, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__.default)(classes.root, className),
+    ref: ref
+  }, other));
+});
+ true ? CardContent.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
+
+  /**
+   * @ignore
+   */
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().elementType)
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_5__.default)(styles, {
+  name: 'MuiCardContent'
+})(CardContent));
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/esm/Chip/Chip.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/Chip/Chip.js ***!
@@ -2780,6 +2939,116 @@ var Chip = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function C
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_11__.default)(styles, {
   name: 'MuiChip'
 })(Chip));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/CssBaseline/CssBaseline.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/CssBaseline/CssBaseline.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "html": () => /* binding */ html,
+/* harmony export */   "body": () => /* binding */ body,
+/* harmony export */   "styles": () => /* binding */ styles,
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+/* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/exactProp.js");
+
+
+
+
+
+var html = {
+  WebkitFontSmoothing: 'antialiased',
+  // Antialiasing.
+  MozOsxFontSmoothing: 'grayscale',
+  // Antialiasing.
+  // Change from `box-sizing: content-box` so that `width`
+  // is not affected by `padding` or `border`.
+  boxSizing: 'border-box'
+};
+var body = function body(theme) {
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
+    color: theme.palette.text.primary
+  }, theme.typography.body2, {
+    backgroundColor: theme.palette.background.default,
+    '@media print': {
+      // Save printer ink.
+      backgroundColor: theme.palette.common.white
+    }
+  });
+};
+var styles = function styles(theme) {
+  return {
+    '@global': {
+      html: html,
+      '*, *::before, *::after': {
+        boxSizing: 'inherit'
+      },
+      'strong, b': {
+        fontWeight: theme.typography.fontWeightBold
+      },
+      body: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({
+        margin: 0
+      }, body(theme), {
+        // Add support for document.body.requestFullScreen().
+        // Other elements, if background transparent, are not supported.
+        '&::backdrop': {
+          backgroundColor: theme.palette.background.default
+        }
+      })
+    }
+  };
+};
+/**
+ * Kickstart an elegant, consistent, and simple baseline to build upon.
+ */
+
+function CssBaseline(props) {
+  /* eslint-disable no-unused-vars */
+  var _props$children = props.children,
+      children = _props$children === void 0 ? null : _props$children,
+      classes = props.classes;
+  /* eslint-enable no-unused-vars */
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, children);
+}
+
+ true ? CssBaseline.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * You can wrap a node.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node),
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().object)
+} : 0;
+
+if (true) {
+  // eslint-disable-next-line
+  CssBaseline['propTypes' + ''] = (0,_material_ui_utils__WEBPACK_IMPORTED_MODULE_3__.default)(CssBaseline.propTypes);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_4__.default)(styles, {
+  name: 'MuiCssBaseline'
+})(CssBaseline));
 
 /***/ }),
 
@@ -16586,6 +16855,100 @@ if (true) {
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/styles/esm/ThemeProvider/ThemeProvider.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@material-ui/styles/esm/ThemeProvider/ThemeProvider.js ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/exactProp.js");
+/* harmony import */ var _useTheme_ThemeContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../useTheme/ThemeContext */ "./node_modules/@material-ui/styles/esm/useTheme/ThemeContext.js");
+/* harmony import */ var _useTheme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../useTheme */ "./node_modules/@material-ui/styles/esm/useTheme/useTheme.js");
+/* harmony import */ var _nested__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./nested */ "./node_modules/@material-ui/styles/esm/ThemeProvider/nested.js");
+
+
+
+
+
+
+ // To support composition of theme.
+
+function mergeOuterLocalTheme(outerTheme, localTheme) {
+  if (typeof localTheme === 'function') {
+    var mergedTheme = localTheme(outerTheme);
+
+    if (true) {
+      if (!mergedTheme) {
+        console.error(['Material-UI: You should return an object from your theme function, i.e.', '<ThemeProvider theme={() => ({})} />'].join('\n'));
+      }
+    }
+
+    return mergedTheme;
+  }
+
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__.default)({}, outerTheme, localTheme);
+}
+/**
+ * This component takes a `theme` prop.
+ * It makes the `theme` available down the React tree thanks to React context.
+ * This component should preferably be used at **the root of your component tree**.
+ */
+
+
+function ThemeProvider(props) {
+  var children = props.children,
+      localTheme = props.theme;
+  var outerTheme = (0,_useTheme__WEBPACK_IMPORTED_MODULE_3__.default)();
+
+  if (true) {
+    if (outerTheme === null && typeof localTheme === 'function') {
+      console.error(['Material-UI: You are providing a theme function prop to the ThemeProvider component:', '<ThemeProvider theme={outerTheme => outerTheme} />', '', 'However, no outer theme is present.', 'Make sure a theme is already injected higher in the React tree ' + 'or provide a theme object.'].join('\n'));
+    }
+  }
+
+  var theme = react__WEBPACK_IMPORTED_MODULE_1__.useMemo(function () {
+    var output = outerTheme === null ? localTheme : mergeOuterLocalTheme(outerTheme, localTheme);
+
+    if (output != null) {
+      output[_nested__WEBPACK_IMPORTED_MODULE_4__.default] = outerTheme !== null;
+    }
+
+    return output;
+  }, [localTheme, outerTheme]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_useTheme_ThemeContext__WEBPACK_IMPORTED_MODULE_5__.default.Provider, {
+    value: theme
+  }, children);
+}
+
+ true ? ThemeProvider.propTypes = {
+  /**
+   * Your component tree.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node.isRequired),
+
+  /**
+   * A theme object. You can provide a function to extend the outer theme.
+   */
+  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().func)]).isRequired
+} : 0;
+
+if (true) {
+   true ? ThemeProvider.propTypes = (0,_material_ui_utils__WEBPACK_IMPORTED_MODULE_6__.default)(ThemeProvider.propTypes) : 0;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ThemeProvider);
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/styles/esm/ThemeProvider/nested.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@material-ui/styles/esm/ThemeProvider/nested.js ***!
@@ -20001,6 +20364,103 @@ var App = function App() {
 
 /***/ }),
 
+/***/ "./client/components/ArtistCard.js":
+/*!*****************************************!*\
+  !*** ./client/components/ArtistCard.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Card/Card.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Button/Button.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/CardContent/CardContent.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Avatar/Avatar.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
+
+
+
+var ArtistCard = function ArtistCard(props) {
+  var linkToArtistPage = function linkToArtistPage(e) {
+    window.open(props.diveResults.external_urls.spotify, "_blank");
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.default, {
+    onClick: linkToArtistPage
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__.default, {
+    justify: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    align: "center",
+    container: true,
+    direction: "column",
+    justify: "center",
+    spacing: 0
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    item: true,
+    xs: 12
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
+    style: {
+      width: "75%",
+      height: "75%"
+    },
+    src: props.diveResults.images[0] ? props.diveResults.images[0].url : null
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    item: true,
+    xs: 12
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+    variant: "h2"
+  }, props.diveResults.name))))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ArtistCard);
+
+/***/ }),
+
+/***/ "./client/components/DiveResults.js":
+/*!******************************************!*\
+  !*** ./client/components/DiveResults.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _ArtistCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ArtistCard */ "./client/components/ArtistCard.js");
+
+
+
+
+
+var DiveResults = function DiveResults(props) {
+  console.log(props.diveResults);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__.default, {
+    justify: "center",
+    container: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtistCard__WEBPACK_IMPORTED_MODULE_2__.default, {
+    diveResults: props.diveResults
+  })));
+};
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    diveResults: state.diveResults
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, null)(DiveResults));
+
+/***/ }),
+
 /***/ "./client/components/SearchBar.js":
 /*!****************************************!*\
   !*** ./client/components/SearchBar.js ***!
@@ -20057,6 +20517,11 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+var styles = {
+  avatar: {
+    marginRight: "5px"
+  }
+};
 
 var SearchBar = /*#__PURE__*/function (_React$Component) {
   _inherits(SearchBar, _React$Component);
@@ -20151,18 +20616,20 @@ var SearchBar = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
         item: true,
-        xs: 12
+        xs: 10
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_lab_Autocomplete__WEBPACK_IMPORTED_MODULE_6__.default, {
         id: "size-small-standard",
         size: "small",
         options: this.state.artistOptions,
-        noOptionsText: "Enter Artist Name",
+        noOptionsText: "We couldn't find anything!",
+        autoHighlight: true,
         onInputChange: this.onTyping,
         getOptionLabel: function getOptionLabel(option) {
           return option.name ? option.name : "";
         },
         renderOption: function renderOption(option) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, option.images[0] ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
+            style: styles.avatar,
             src: option.images[0].url
           }) : null, option.name);
         },
@@ -20171,8 +20638,8 @@ var SearchBar = /*#__PURE__*/function (_React$Component) {
         value: this.searchValue,
         renderInput: function renderInput(params) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, _extends({}, params, {
-            variant: "standard",
-            label: "Deep Dive Artist",
+            variant: "outlined",
+            label: "Start with one of your favorite artists!",
             placeholder: "",
             fullWidth: true
           }));
@@ -20213,12 +20680,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var SearchHeader = function SearchHeader() {
+  var styles = {
+    headerGrid: {
+      // background: "linear-gradient(217deg,#2fa6e2,#b5bcff)",
+      background: "linear-gradient(#bce1ff, #060b42, #181616)"
+    },
+    headerText: {
+      marginTop: "20px",
+      marginBottom: "15px"
+    }
+  };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__.default, {
+    style: styles.headerGrid,
     item: true,
     xs: 12
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.default, {
-    variant: "h2"
+    style: styles.headerText,
+    variant: "h1"
   }, "DeepDive"));
 };
 
@@ -20248,7 +20728,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var SearchPage = function SearchPage() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__.default, {
-    container: true
+    container: true,
+    justify: "center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SearchHeader__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SearchBar__WEBPACK_IMPORTED_MODULE_2__.default, null)));
 };
 
@@ -20360,7 +20841,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/createMuiTheme.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/styles/esm/ThemeProvider/ThemeProvider.js");
+/* harmony import */ var _material_ui_core___WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/ */ "./node_modules/@material-ui/core/esm/CssBaseline/CssBaseline.js");
+/* harmony import */ var _material_ui_core_colors___WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/colors/ */ "./node_modules/@material-ui/core/esm/colors/blue.js");
 /* harmony import */ var _history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./history */ "./client/history.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store */ "./client/store/index.js");
 /* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app */ "./client/app.js");
@@ -20371,11 +20856,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+var theme = (0,_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__.default)({
+  palette: {
+    type: "dark",
+    primary: {
+      main: _material_ui_core_colors___WEBPACK_IMPORTED_MODULE_7__.default[100]
+    },
+    background: {
+      "default": "#181616"
+    }
+  }
+});
+theme.typography.h1 = {
+  fontFamily: "\"Roboto\", \"Helvetica\", \"Arial\", \"sans-serif\"",
+  fontWeight: 300,
+  fontSize: "4rem",
+  "@media (min-width:600px)": {
+    fontSize: "6rem"
+  }
+};
 react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__.Provider, {
   store: _store__WEBPACK_IMPORTED_MODULE_4__.default
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Router, {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Router, {
   history: _history__WEBPACK_IMPORTED_MODULE_3__.default
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_app__WEBPACK_IMPORTED_MODULE_5__.default, null))), document.getElementById("app"));
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_9__.default, {
+  theme: theme
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core___WEBPACK_IMPORTED_MODULE_10__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_app__WEBPACK_IMPORTED_MODULE_5__.default, null)))), document.getElementById("app"));
 
 /***/ }),
 
@@ -20391,9 +20900,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _components_SearchPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/SearchPage */ "./client/components/SearchPage.js");
 /* harmony import */ var _components_SelectGenre__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/SelectGenre */ "./client/components/SelectGenre.js");
+/* harmony import */ var _components_DiveResults__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/DiveResults */ "./client/components/DiveResults.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20421,6 +20931,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var Routes = /*#__PURE__*/function (_Component) {
   _inherits(Routes, _Component);
 
@@ -20435,11 +20946,15 @@ var Routes = /*#__PURE__*/function (_Component) {
   _createClass(Routes, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
+        exact: true,
+        path: "/dive",
+        component: _components_DiveResults__WEBPACK_IMPORTED_MODULE_3__.default
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
         exact: true,
         path: "/selectGenre",
         component: _components_SelectGenre__WEBPACK_IMPORTED_MODULE_2__.default
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
         path: "/",
         component: _components_SearchPage__WEBPACK_IMPORTED_MODULE_1__.default
       }));
@@ -20474,7 +20989,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 var GET_DIVE_RESULTS = "GET_DIVE_RESULTS";
-var defaultDiveResults = {};
+var defaultDiveResults = {
+  images: []
+};
 var setDiveResults = function setDiveResults(diveResults) {
   return {
     type: GET_DIVE_RESULTS,
@@ -20560,6 +21077,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var persistedState = localStorage.getItem("deepDiveReduxState") ? JSON.parse(localStorage.getItem("deepDiveReduxState")) : {};
 var reducer = (0,redux__WEBPACK_IMPORTED_MODULE_6__.combineReducers)({
   searchArtist: _searchArtist__WEBPACK_IMPORTED_MODULE_3__.default,
   searchGenre: _searchGenre__WEBPACK_IMPORTED_MODULE_4__.default,
@@ -20568,7 +21086,10 @@ var reducer = (0,redux__WEBPACK_IMPORTED_MODULE_6__.combineReducers)({
 var middleware = (0,redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__.composeWithDevTools)((0,redux__WEBPACK_IMPORTED_MODULE_6__.applyMiddleware)(redux_thunk__WEBPACK_IMPORTED_MODULE_1__.default, (0,redux_logger__WEBPACK_IMPORTED_MODULE_0__.createLogger)({
   collapsed: true
 })));
-var store = (0,redux__WEBPACK_IMPORTED_MODULE_6__.createStore)(reducer, middleware);
+var store = (0,redux__WEBPACK_IMPORTED_MODULE_6__.createStore)(reducer, persistedState, middleware);
+store.subscribe(function () {
+  localStorage.setItem("deepDiveReduxState", JSON.stringify(store.getState()));
+});
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (store);
 
 /***/ }),

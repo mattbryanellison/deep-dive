@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 const SearchPage = () => {
   return (
     <div>
-      <Grid container>
+      <Grid container justify="center">
         <SearchHeader />
         <SearchBar />
       </Grid>

@@ -7,10 +7,16 @@ import searchArtist from "./searchArtist";
 import searchGenre from "./searchGenre";
 import diveResults from "./diveResults";
 
+const persistedState = localStorage.getItem("deepDiveReduxState")
+  ? JSON.parse(localStorage.getItem("deepDiveReduxState"))
+  : {};
+
 const reducer = combineReducers({ searchArtist, searchGenre, diveResults });
 const middleware = composeWithDevTools(
   applyMiddleware(thunkMiddleware, createLogger({ collapsed: true }))
 );
-const store = createStore(reducer, middleware);
-
+const store = createStore(reducer, persistedState, middleware);
+store.subscribe(() => {
+  localStorage.setItem("deepDiveReduxState", JSON.stringify(store.getState()));
+});
 export default store;

@@ -2,7 +2,9 @@ import axios from "axios";
 
 const GET_DIVE_RESULTS = `GET_DIVE_RESULTS`;
 
-const defaultDiveResults = {};
+const defaultDiveResults = {
+  images: [],
+};
 
 export const setDiveResults = (diveResults) => ({
   type: GET_DIVE_RESULTS,
