@@ -8,7 +8,7 @@ const SearchPage = () => {
   return (
     <div>
       <Grid container justify="center">
-        <SearchHeader />
+        <SearchHeader/>
         <SearchBar />
       </Grid>
     </div>

@@ -19,10 +19,13 @@ class SearchBar extends React.Component {
     this.state = {
       searchValue: "",
       artistOptions: [],
+      label: "Start with one of your favorite artists!",
     };
     this.onTyping = this.onTyping.bind(this);
     this.onSelected = this.onSelected.bind(this);
     this.onOptionSelected = this.onOptionSelected.bind(this);
+    this.handleBlur = this.handleBlur.bind(this);
+    this.handleFocus = this.handleFocus.bind(this);
   }
 
   async onTyping(e, val, reason) {
@@ -44,6 +47,14 @@ class SearchBar extends React.Component {
     history.push("/selectGenre");
   }
 
+  handleFocus() {
+    this.setState({ label: "Start with one of your favorite artists!" });
+  }
+
+  handleBlur() {
+    this.setState({ label: "", artistOptions: [] });
+  }
+
   render() {
     return (
       <Grid item xs={10}>
@@ -51,7 +62,7 @@ class SearchBar extends React.Component {
           id="size-small-standard"
           size="small"
           options={this.state.artistOptions}
-          noOptionsText="We couldn't find anything!"
+          noOptionsText=""
           autoHighlight={true}
           onInputChange={this.onTyping}
           getOptionLabel={(option) => (option.name ? option.name : "")}
@@ -75,6 +86,9 @@ class SearchBar extends React.Component {
               label="Start with one of your favorite artists!"
               placeholder=""
               fullWidth
+              autoFocus
+              onFocus={this.handleFocus}
+              onBlur={this.handleBlur}
             />
           )}
         />

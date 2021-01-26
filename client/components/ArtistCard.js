@@ -9,13 +9,18 @@ import {
 } from "@material-ui/core";
 
 const ArtistCard = (props) => {
+  const styles = {
+    card: {
+      backgroundColor: "#0e0e0e",
+    },
+  };
   const linkToArtistPage = (e) => {
-    window.open(props.diveResults.external_urls.spotify, "_blank");
+    window.open(props.artist.external_urls.spotify, "_blank");
   };
   return (
-    <Card>
-      <Button onClick={linkToArtistPage}>
-        <CardContent justify="center">
+    <Card elevation={7} style={styles.card}>
+      <CardContent justify="center">
+        <Button onClick={linkToArtistPage}>
           <Grid
             align="center"
             container
@@ -25,20 +30,17 @@ const ArtistCard = (props) => {
           >
             <Grid item xs={12}>
               <Avatar
+                variant="rounded"
                 style={{ width: "75%", height: "75%" }}
-                src={
-                  props.diveResults.images[0]
-                    ? props.diveResults.images[0].url
-                    : null
-                }
+                src={props.artist.images[0] ? props.artist.images[0].url : null}
               />
             </Grid>
             <Grid item xs={12}>
-              <Typography variant="h2">{props.diveResults.name}</Typography>
+              <Typography variant="h2">{props.artist.name}</Typography>
             </Grid>
           </Grid>
-        </CardContent>
-      </Button>
+        </Button>
+      </CardContent>
     </Card>
   );
 };

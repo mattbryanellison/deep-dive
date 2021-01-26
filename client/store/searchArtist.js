@@ -1,3 +1,4 @@
+
 const SET_ARTIST = `SET_ARTIST`;
 
 const defaultArtist = {};
